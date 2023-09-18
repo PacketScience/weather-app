@@ -23,7 +23,7 @@ const getWeather = (searchBar) => {
         (details.innerHTML = `<img src="${response.current.condition.icon}"><p class="text">${response.current.condition.text}</p>
         <p><span>Region:</span>${response.location.region}</p>
         <p><span>Country:</span>${response.location.country}</p>
-        <p><span>Temp:</span>${response.current.condition["temp_c"]}</p>
+        <p><span>Temp:</span>${response.current["temp_c"]}°C</p>
         <p><span>Local Time:</span>${response.location["localtime"]}</p>`)
       )
     )
